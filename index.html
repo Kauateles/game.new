@@ -4,19 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>..:: gemenew ::..</title>
 </head>
 <body>
-    <div id="menu">
-
-        <header id="header">
-            <a id="logo" href="index,html"><img src="./img/imagem 1.jpg" alt=""></a>
+    <!-- aula 15/04/2023 -->
+    <!-- inicio menu responsivo -->
+    <header id="header">
+            <a id="logo" href="index.html"><img src="./img/imagem 1.jpg" alt=""></a>
 
         
 
-        </header>
-
+    </header>
+     <!-- fim menu responsivo -->
+     <!-- inicio carousel pagina principal -->
+    <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-mdb-interval="100">
+                <img 
+                src="./img/imagem1.jpg"
+                class="d-block w-100" 
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/imagem2.jpg"
+                class="d-block w-100" 
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/imagem3.jpg"
+                class="d-block w-100" 
+                alt="..."
+                />
+            </div>
+            <div class="carousel-item" data-mdb-interval="100">
+                <img 
+                src="./img/imagem4.jpg"
+                class="d-block w-100" 
+                alt="..."
+                />
+            </div>
+        </div>
+            <!-- alt +shift + seta para baixo, copia conteudo -->
+            <!-- inicio controle carousel -->
+            <button
+             class="carousel-control-prev"
+             data-mdb-arget="#carouselExampleIerval"
+             type="button"
+             data-mdb-slide="prev"
+            >
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+             class="carousel-control-next"
+             data-mdb-arget="#carouselExampleIerval"
+             type="button"
+             data-mdb-slide="next"
+            >
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+            </button>
     </div>
 </body>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.min.js">
+
+</script>
 </html>
