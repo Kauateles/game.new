@@ -14,66 +14,313 @@
     <!-- inicio menu responsivo -->
     <header id="header">
             <a id="logo" href="index.html"><img src="./img/imagem 1.jpg" alt=""></a>
+            <nav id="nav">
+                <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="link menu" href="index.html">home</a></li>
+                    
+
+                </ul>
+
+            </nav>
 
         
 
     </header>
      <!-- fim menu responsivo -->
      <!-- inicio carousel pagina principal -->
-    <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-mdb-interval="100">
+            <div class="carousel-item active" data-bs-interval="1900">
                 <img 
-                src="./img/imagem1.jpg"
+                src="./img/imagem10.jpg"
                 class="d-block w-100" 
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mdb-interval="100">
+            <div class="carousel-item" data-bs-interval="1900">
                 <img 
-                src="./img/imagem2.jpg"
+                src="./img/imagem12.jpg"
                 class="d-block w-100" 
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mdb-interval="100">
+            <div class="carousel-item" data-bs-interval="1900">
                 <img 
-                src="./img/imagem3.jpg"
+                src="./img/imagem9.jpg"
                 class="d-block w-100" 
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mdb-interval="100">
+            <div class="carousel-item" data-bs-interval="1900">
                 <img 
-                src="./img/imagem4.jpg"
+                src="./img/imagem8.jpg"
                 class="d-block w-100" 
                 alt="..."
                 />
             </div>
         </div>
             <!-- alt +shift + seta para baixo, copia conteudo -->
+            <!-- alt + shift >> selecionando diversas e alterando o mesmo valor de forma simultanea -->
             <!-- inicio controle carousel -->
             <button
              class="carousel-control-prev"
-             data-mdb-arget="#carouselExampleIerval"
+             data-bs-arget="#carouselExampleIerval"
              type="button"
-             data-mdb-slide="prev"
+             data-bs-slide="prev"
             >
              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
              <span class="visually-hidden">Previous</span>
             </button>
             <button
              class="carousel-control-next"
-             data-mdb-arget="#carouselExampleIerval"
+             data-bs-arget="#carouselExampleIerval"
              type="button"
-             data-mdb-slide="next"
+             data-bs-slide="next"
             >
              <span class="carousel-control-next-icon" aria-hidden="true"></span>
              <span class="visually-hidden">Next</span>
             </button>
     </div>
+    <!-- fim controle caroucel -->
+    <!-- fim carousel pagina principal -->
+    <!-- inicio banner -->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./img/imagem5.jpg" class="img-fluid" alt="banner-home">
+
+                    </figure>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block">
+                        <h1>conheça os jogos em lançamento para 2023</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perferendis exercitationem fugiat saepe iure voluptate cupiditate, itaque quidem eius ratione magni doloremque maiores quod recusandae! Fugiat doloremque adipisci veritatis iure?</p>
+                        <a href="produtos.html">saiba mais</a>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- fim baner -->
+    <!-- inicio destaque -->
+    <div class="destaque">
+        <div class="container">
+            <div class="row d-flox justify-content-center">
+                <!-- inicio da teg section do texto de destaque -->
+                <section class="col-12">
+                    <h2>vamos ver os principais jogos para serem lançados em 2023</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magnam, quam enim ex voluptates neque dolorem soluta ratione molestiae, maxime perferendis dicta hic aliquam dolores vitae est? Tempora, eos nobis!</p>
+                </section>
+                <!-- fim da teg section do texto de destaque -->
+                <!-- inicio imagem 1 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem6.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 1 -->
+                <!-- inicio imagem 2 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem7.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 2 -->
+                <!-- inicio imagem 3 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem8.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 3 -->
+                <!-- inicio imagem 4 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem9.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 4 -->
+                <!-- inicio imagem 5 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem10.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 5 -->
+                <!-- inicio imagem 6 -->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/imagem12.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>jogo <br> ano</figcaption>
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem 6 -->
+                <!-- inicio saiba mais -->
+                <div class="col-12">
+                    <a href="a">saiba mais</a>
+                </div>
+                <!-- fim saiba amis -->
+
+            </div>
+
+        </div>
+
+    </div>
+     <!-- fim destaque -->
+     <!-- inicio do texto das novidades -->
+     <div class="novidades" id="novidades-mobaile">
+        <div class="container-fluid">
+            <div class="row">
+                <div col-md-6>
+                    <section class="text-body">
+                        <h2>conheça nossas novidades</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nemo quibusdam praesentium suscipit cum expedita nam officiis obcaecati tempore? Natus, ipsa molestiae reiciendis tempore ducimus expedita delectus quia exercitationem id?</p>
+                        <a class="bnt-banner" href="#" target="_blank">saiba mais</a>
+
+                    </section>
+
+                </div>
+                <!-- fim do texto novidades -->
+                <!-- inicio da imagem novidades -->
+                <div class="col-md-6">
+                    <figure>
+                        <img src="./img/imagem4.jpg" class="img-fluid" alt="banner-home">
+
+                    </figure>
+
+                </div>
+                <!-- fim da imagem novidades -->
+
+            </div>
+
+        </div>
+
+     </div>
+     <!-- inicio galeria -->
+     <div class="galeria d-flex aling-itens-center">
+        <div class="container">
+            <div class="row">
+                <!-- inicio texto galerias -->
+                <div class="col-12">
+                    <section class="texto-galeria">
+                        <h2>conheça nossa galeria</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste sint enim expedita, voluptatem quos totam corrupti vitae beatae reprehenderit at natus ducimus? Modi architecto, nostrum magnam sed excepturi ullam.</p>
+
+                    </section>
+
+                </div>
+                <!-- fim texto galerias -->
+                <!-- inicio imagem 1 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 1 da galeria -->
+                <!-- inicio imagem 2 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 2 da galeria -->
+                <!-- inicio imagem 3 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 3 da galeria -->
+                <!-- inicio imagem 4 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 4 da galeria -->
+                <!-- inicio imagem 5 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 5 da galeria -->
+                <!-- inicio imagem 6 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 6 da galeria -->
+                <!-- inicio imagem 7 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 7 da galeria -->
+                <!-- inicio imagem 8 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 8 da galeria -->
+                <!-- inicio imagem 9 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 9 da galeria -->
+                <!-- inicio imagem 10 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 10 da galeria -->
+                <!-- inicio imagem 11 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 11 da galeria -->
+                <!-- inicio imagem 12 da galeria -->
+                <div class="gallery col-6 col-md-3">
+                    <img src="./img/imagem5.jpg" class="img-fluid" alt="img-galeria">
+
+                </div>
+                <!-- fim imagem 12 da galeria -->
+
+            </div>
+
+        </div>
+
+     </div>
+     <!-- fim da galeria -->
+     <!-- inicio footer -->
 </body>
-<script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.min.js">
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
 
 </script>
 </html>
