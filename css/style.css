@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
 /* Aula 01 - 01/04/2023 */
 
 body, ul {
@@ -7,19 +8,20 @@ body, ul {
 #header #menu a {
     color: rgb(255, 0, 0);
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Russo One';
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    margin-right: 15px;
 }
 #header #menu a:hover {
-    color: crimson;
-    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
     transition: 0.3s;
-    text-shadow: 4px 4px 6px #ffffff;
+    text-shadow: 4px 4px 6px #000000;
 }
 #logo img:hover {
-    box-shadow: 4px 4px 6px #ff0000;
+    box-shadow: 4px 4px 6px #03b94000;
     transition: 0.3s;
 }
 
@@ -41,6 +43,8 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #000000;
+    box-shadow: 6px 6px 8px #a7a4a485;
+    transition: 0.3;
 }
 #menu {
     display: flex;
@@ -50,18 +54,38 @@ body, ul {
 #btn-mobile {
     display: none;
 }
+/*
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
     padding-top: 80px;
 }
+*/
+
+#carouselexempleinterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px #6d6d6d;
+    transition: 0.3;
+    place-items: normal lagacy;
+    margin-block: 10px;
+    height: auto;
+}
+#carouselexampleinterval .carousel-inner img {
+    max-height: auto;
+    height: 50%;
+    width: 100%;
+}
+
 /* estilo css banner */
 .section-banner-home {
     width: 100%;
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color:  #ff0000;
+    background-color:  #0084db;
 }
 .section-banner-home img {
     height: 400px;
@@ -71,22 +95,30 @@ body, ul {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
+    color: #ffffff;
 }
 .section-banner-home .texto-banner p{
     font-size: 30px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 .section-banner-home .texto-banner a {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 217, 255);
     text-decoration: nome;
-    background-color: #0088ff;
+    background-color: #ffffff;
     padding: 4px 14px;
     font-size: 15px;
+}
+.section-banner-home .texto-banner a:hover {
+    color: rgb(0, 174, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 18px;
+    font-weight: bold;
 }
 /* fim css banner */
 /* css destaque */
 .destaque {
-    background-color: rgba(184, 184, 184, 0.459);
+    background-color: rgb(0, 0, 0);
 }
 .destaque h2 {
     margin-top: 15px;
@@ -117,8 +149,74 @@ body, ul {
 }
 /* fim destaque */
 
+/* css novidades */
 
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2 {
+    color: #000000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(0, 0, 0)
+}
+.novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+/* fim css novidades */
 
+/* inicio css galeria */
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 24px auto 50px;
+}
 
+/* fim css galerias */
 
+/* inicio css footer */
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
 
