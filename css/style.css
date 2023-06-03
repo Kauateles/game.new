@@ -31,10 +31,11 @@ body, ul {
     position: relative;
     top: 0px;
     left: 0px;
+    border-radius: 200px; /* criar borda circular nas imagem */
 }
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 90px;
@@ -43,7 +44,7 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #000000;
-    box-shadow: 6px 6px 8px #a7a4a485;
+    box-shadow: 6px 6px 8px #ff0404c7;
     transition: 0.3;
 }
 #menu {
@@ -146,34 +147,36 @@ body, ul {
 .section-banner-home {
     width: 100%;
     height: 500px;
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 50px;
-    background-color:  #0084db;
+    background-color:  #000000; /* fundo do baner home */
 }
 .section-banner-home img {
     height: 400px;
+    width: 70%;
+    display: block;
 }
 .section-banner-home .texto-banner h1 {
     font-size: 30px;
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
-    color: #ffffff;
+    color: #ffffff; /* cor do titulo do home */
 }
 .section-banner-home .texto-banner p{
     font-size: 30px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #ffffff; /* cor do texto do home */ 
 }
 .section-banner-home .texto-banner a {
-    color: rgb(0, 217, 255);
+    color: rgb(255, 0, 0);
     text-decoration: nome;
     background-color: #ffffff;
     padding: 4px 14px;
     font-size: 15px;
 }
 .section-banner-home .texto-banner a:hover {
-    color: rgb(0, 174, 255);
+    color: rgb(230, 0, 0);
     text-shadow: 2px 2px 4px #000000;
     font-size: 18px;
     font-weight: bold;
@@ -188,12 +191,14 @@ body, ul {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    color: #ffffff;
 }
 .destaque p {
     width: 77%;
     text-align: center;
     font-size: 14px;
     margin: 30px auto;
+    color: #ffffff; 
 }
 .destaque figcaption {
     font-size: 13px;
@@ -213,41 +218,46 @@ body, ul {
 /* fim destaque */
 
 /* css novidades */
-
+.novidades {
+    background-color: #000000;
+}
 .novidades .text-body {
     width: 80%;
     margin: 70px auto;
 }
 .novidades h2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 26px;
     width: 70%;
 }
 .novidades p {
-    color: rgb(0, 0, 0)
+    color: rgb(255, 255, 255)
 }
 .novidades a {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     text-decoration: underline;
-    text-decoration-color: violet;
+    text-decoration-color: rgb(230, 0, 0);
     padding: 6px 12px;
-    background-color: rgb(0, 68, 194);
+    background-color: rgb(255, 255, 255);
     font-weight: 400;
 }
 /* fim css novidades */
 
 /* inicio css galeria */
 .galeria {
-    margin: 60px auto 20px;
+    margin: 0px auto 0px;
+    background-color: #000000;
 }
 .galeria h2 {
     text-align: center;
     font-size: 24px;
+    color: #ffffff;
 }
 .galeria p {
     text-align: center;
     width: 50%;
     margin: 14px auto 50px;
+    color: #ffffff;
 }
 .galeria .gallery {
     width: 30%;
@@ -259,13 +269,27 @@ body, ul {
 /* inicio css footer */
 .rodape {
     padding: 50px 50px 0;
+    background-color: #000000;
+}
+.rodape .container #logo-rodape img {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+    border-radius: 100px; /* criar borda circular nas imagem */
+}
+.rodape .container #logo-rodape img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.02);
 }
 .rodape .info-contato p {
     margin: 0px;
+    color: #ffffff;
 }
 .rodape a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 13px;
 }
 .rodape a:hover {
@@ -277,9 +301,226 @@ body, ul {
 .rodape .redes-sociais img {
     width: 45px;
     height: 40px;
+    padding-left: 0;
+    margin-left: 0.6rem;
+    transition: transform .3s;
+    border-radius: 100px; /* arredondando div do objeto redes social */
+}
+.rodape .redes-sociais img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
+    color: #ffffff;
+}
+/* inicio css streaming */
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    background-color:  #000000;
+}
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.embed-container p {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: #ff0000;
+    transition: transform .3s;
+    display: flex;
+}
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: rgb(255, 0, 0);
+}
+.embed-container .col-lg-4 {
+    margin-top: 30px;
+}
+.embed-container .col-lg-6 {
+    margin-top: 30px;
 }
 
+/* fim css streaming */
+
+/* Início CSS Contato */
+.contato {
+    margin-top: 0px;
+    background: #000000;
+    color: #ffffff;
+    padding-top: 35px;
+}
+.form_main {
+    width: 100%;
+}
+.form_main h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.col-md-6 #txt-local {
+    border-bottom: 1px solid #ff0000;
+    margin-bottom: 16px;
+    position: relative;
+}
+.text-left {
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 9px;
+    position: relative;
+}
+.text-left span {
+    background: #ffffff none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0px;
+}
+.form-horizontal {
+    border-radius: 107px;
+    padding: 6px;
+}
+.form-control[type="text"] {
+    border: 1px solid #ff0000;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control[type="email"] {
+    border: 1px solid #ff0000;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control-msg[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.formbutton[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #0099ff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #0099ff;
+    background-color: #297ee6;
+    display: inline-block;
+    border: 1px solid #2489d6;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.formbutton:hover {
+    background-color: #006efd;
+}
+.formbutton:active {
+    position: relative;
+    top: 1px;
+}
+.txt2:hover {
+    background: rgb(255, 0, 0) none repeat scroll 0 0;
+    color: #ff0000;
+    transition: all 0.5s ease 0s;
+}
+/* Fim CSS Contato */
+
+/* Início CSS Map */
+.map {
+    width: 100%;
+    height: 400px;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Fim CSS Map */
+
+/* Início CSS Whats */
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    /* top: 200px; */
+    right: 20px;
+    bottom: 80px;
+    
+}
+.whatsapp img {
+    height: 60px;
+    
+}
+.whatsapp .quica {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: quica .7s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes quica {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(100%);
+        width: 70px;
+        height: 40px;
+    }
+}
+/* fim css wats */
+/* inicio css card produtos */
+.text-center .mb-5 {
+    margin-top: 20px;
+}
+.card img {
+    max-height: 300px;
+    width: 100%;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+.overlay .mask {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.overlay mask:hover {
+    opacity: 1;
+}
+/* fim css card produtos */
